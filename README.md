@@ -1,4 +1,4 @@
-# vue-node
+# vue-mock-elementUI-webpack
 
 > vue with node
 
@@ -9,7 +9,7 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run dev/start
 
 # build for production with minification
 npm run build
