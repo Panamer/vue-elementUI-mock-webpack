@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'http://localhost:8090/api'   // sit2环境
+const baseURL = 'http://localhost:8090/api'
 axios.defaults.baseURL = baseURL
 
 export default {
@@ -10,7 +10,7 @@ export default {
     getList () {
         return axios.get('/data')
     },
-
+  /* 测试post请求 */
     testPost () {
         return axios.post('/test')
     }
