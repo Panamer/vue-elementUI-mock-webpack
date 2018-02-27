@@ -9,12 +9,13 @@ import App from './App'
 
 Vue.use(ElementUI)
 Vue.config.productionTip = false
+/* 把axios挂载到vue上 就可以用this.$axios了 */
 Vue.prototype.$axios = axios
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App }
+    el: '#app',
+    router,
+    template: '<App/>',
+    components: { App }
 })

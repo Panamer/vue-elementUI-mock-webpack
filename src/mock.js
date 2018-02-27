@@ -1,8 +1,8 @@
 const express = require('express');
-const router = express.Router();
+const app = express();
 const Mock = require('mockjs')
 var Random = Mock.Random;
-router.get('/data', (req, res) => {
+app.get('/data', (req, res) => {
   const mockData = Mock.mock({
     "code": '200',
     "result|5": [{
@@ -13,4 +13,9 @@ router.get('/data', (req, res) => {
   })
   res.json(mockData)
 });
-module.exports = router;
+
+app.post('/test', function (req, res) {
+  res.send('POST request to the homepage');
+});
+
+module.exports = app;
