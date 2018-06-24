@@ -27,3 +27,4 @@ npm run build --report
 
 #可以直接访问localhost:8090/api/data  查看接口数据，因为是用express起的服务路由也是express.router,所以mock的服务同项目本地服务地址
 
+加入release自动提交代码
